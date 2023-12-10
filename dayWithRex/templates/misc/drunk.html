@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Ein Abend mi San Miguel{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p>Ein Abend mit San Miguel</p>
+    <img src="{{ url_for('static', filename='drunk.jpg') }}" alt="Italian Trulli">
+{% endblock %}
